@@ -1,0 +1,48 @@
+# Node modules
+**/node_modules/
+
+# Watchman files
+**/.watchmanconfig
+
+# Metro bundler cache
+**/.metro-cache/
+
+# React Native packager cache
+**/packager-cache-*/
+
+# Yarn & npm logs
+**/yarn-error.log
+**/npm-debug.log
+
+# Android
+**/android/app/build/
+**/android/build/
+**/*.keystore
+
+# iOS
+**/ios/Pods/
+**/ios/build/
+**/*.xcworkspace
+**/*.xcuserstate
+**/*.xcuserdata
+
+# Xcode
+**/*.pbxuser
+**/*.mode1v3
+**/*.mode2v3
+**/*.perspectivev3
+**/xcuserdata/
+
+# Misc
+**/*.log
+**/*.tmp
+
+# VSCode
+**/.vscode/
+
+# macOS
+**/.DS_Store
+
+# Expo
+**/.expo/
+**/.expo-shared/
