@@ -40,17 +40,14 @@ function ManageExpense({ route, navigation }) {
     navigation.goBack();
   }
 
-  async function confirmHandler(expenseData) {
-    console.log("inconfigrm");
+  async function confirmHandler(expenseData) {;
     setIsSubmitting(true);
     try {
       if (isEditing) {
         expensesCtx.updateExpense(editedExpenseId, expenseData);
         await updateExpense(editedExpenseId, expenseData);
       } else {
-        console.log("in news")
         const id = await storeExpense(expenseData);
-        console.log("done news")
         expensesCtx.addExpense({ ...expenseData, id: id });
       }
       navigation.goBack();

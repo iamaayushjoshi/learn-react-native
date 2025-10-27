@@ -3,7 +3,6 @@ import MealItem from "./MealItem";
 
 function MealList({ items }) {
   const renderMealItem = (itemData) => {
-    console.log(itemData);
     const item = itemData.item;
     const mealItemProps = {
       id: item.id,
